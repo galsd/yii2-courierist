@@ -12,11 +12,10 @@ nbproject
 # windows thumbnail cache
 Thumbs.db
 
-# composer vendor dir
+# composer
 /vendor
-
-# composer itself is not needed
 composer.phar
+composer.lock
 
 # Mac DS_Store Files
 .DS_Store
