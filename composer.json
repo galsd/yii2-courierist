@@ -1,0 +1,30 @@
+{
+  "name": "galsd/yii2-courierist",
+  "description": "Courierist client SDK for Yii2 framework",
+  "keywords": [
+    "yii",
+    "courierist",
+    "api"
+  ],
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Vasyl Iatsenko",
+      "email": "head@galsd.com"
+    }
+  ],
+  "type": "yii2-extension",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "2.0.*"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "galsd\\courierist\\": "src"
+    }
+  },
+  "extra": {
+  }
+}
