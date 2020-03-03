@@ -40,6 +40,23 @@ class Courierist extends Component {
         }
     }
 
+    public function getOrder($id) {
+        $url = "{$this->url}/api/v1/order/get/{$id}";
+        try {
+            return $this->_curl($url);
+        } catch (Exception $e) {
+            throw new Exception("Не удалось получить заказ. {$e->getMessage()}");
+        }
+    }
+
+    public function searchOrders($params) {
+        $url = "{$this->url}/api/v1/order/search?" . http_build_query($params);
+        try {
+            return $this->_curl($url);
+        } catch (Exception $e) {
+            throw new Exception("Не удалось выпонить поиск. {$e->getMessage()}");
+        }
+    }
 
     public function createOrder($data) {
         $url = "{$this->url}/api/v1/order/create";
